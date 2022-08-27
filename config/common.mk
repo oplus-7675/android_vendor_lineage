@@ -153,6 +153,10 @@ PRODUCT_PACKAGES += \
     LineageSetupWizard
 endif
 
+# Google Photos Pixel Exclusive XML
+PRODUCT_COPY_FILES += \
+    vendor/lineage/prebuilt/common/etc/sysconfig/pixel_2016_exclusive.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/pixel_2016_exclusive.xml
+
 PRODUCT_PACKAGES += \
     LineageSettingsProvider \
     Updater
